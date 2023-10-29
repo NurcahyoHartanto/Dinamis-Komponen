@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import DinamisComponent from './Dinamis Komponen/DinamisComponent';
+import LogoReact from './Dinamis Komponen/Aset/LogoReact.png'
+import Nextjs from './Dinamis Komponen/Aset/Nextjs.png'
+import Redux from './Dinamis Komponen/Aset/Redux.png'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <DinamisComponent img={LogoReact} nama="React js" desc="library javascript populer buatan facebook"/>
+        <DinamisComponent img={Nextjs} nama="Next js" desc=" framework open-source untuk membuat aplikasi web"/>
+        <DinamisComponent img={Redux} nama="Redux" desc="salah satu library yang biasanya digunakan bersama react js"/>
     </div>
   );
 }
